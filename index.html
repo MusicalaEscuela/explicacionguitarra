@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explora la Guitarra | Musicala</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Musicala Logo" class="brand-logo-img" />
+        <div>
+          <p class="eyebrow">Musicala presenta</p>
+          <h1>Explora la guitarra</h1>
+        </div>
+      </div>
+
+      <nav class="nav-list">
+        <button class="nav-btn active" data-section="inicio">Inicio</button>
+        <button class="nav-btn" data-section="partes">Partes</button>
+        <button class="nav-btn" data-section="historia">Historia</button>
+        <button class="nav-btn" data-section="tipos">Tipos</button>
+        <button class="nav-btn" data-section="primeros-pasos">Primeros pasos</button>
+        <button class="nav-btn" data-section="acordes">Acordes</button>
+        <button class="nav-btn" data-section="cuidado">Cuidado</button>
+        <button class="nav-btn" data-section="quiz">Quiz</button>
+      </nav>
+
+      <div class="sidebar-card">
+        <p>🎯 Objetivo</p>
+        <strong>Que alguien que empieza entienda el instrumento sin morir entre tecnicismos, que ya bastante hace la humanidad.</strong>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section id="inicio" class="screen active-screen">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Guía inicial para principiantes</p>
+            <h2>Tu primera vuelta seria por el universo de la guitarra</h2>
+            <p class="lead">Aprende las partes del instrumento, una historia breve, tipos de guitarra, cuidados básicos, primeros acordes y pequeños retos para empezar con criterio.</p>
+            <div class="hero-actions">
+              <button class="primary-action" data-jump="partes">Explorar partes</button>
+              <button class="secondary-action" data-jump="primeros-pasos">Empezar ruta</button>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <img src="assets/guitarra_hero.png" alt="Ilustración de guitarra moderna" class="hero-guitar-img" />
+            <h3>¿Qué hace especial a la guitarra?</h3>
+            <p>Es melódica, armónica y rítmica al mismo tiempo. Puede acompañar canciones, hacer solos, crear ambientes y salvar reuniones familiares de conversaciones incómodas.</p>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <article>
+            <span>6</span>
+            <p>Cuerdas comunes en la guitarra estándar</p>
+          </article>
+          <article class="tuning-card">
+            <div class="tuning-badges">
+              <span>Mi</span>
+              <span>La</span>
+              <span>Re</span>
+              <span>Sol</span>
+              <span>Si</span>
+              <span>Mi</span>
+            </div>
+            <p>Afinación estándar de grave a agudo</p>
+          </article>
+          <article>
+            <span>3</span>
+            <p>Familias muy usadas: clásica, acústica y eléctrica</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="partes" class="screen">
+        <div class="section-heading">
+          <p class="eyebrow">Mapa interactivo</p>
+          <h2>Partes principales de la guitarra</h2>
+          <p>Haz clic en cada punto. Sí, la guitarra tiene más partes que excusas para no practicar.</p>
+        </div>
+
+        <div class="parts-layout">
+          <div class="guitar-diagram" aria-label="Diagrama interactivo de guitarra">
+            <img src="assets/guitarra_diagrama.png" alt="Diagrama de guitarra" class="guitar-diagram-bg" />
+            <button class="hotspot" data-part="clavijero" style="left: 59%; top: 11%;">Clavijero</button>
+            <button class="hotspot" data-part="mastil" style="left: 62%; top: 35%;">Mástil</button>
+            <button class="hotspot" data-part="trastes" style="left: 32%; top: 38%;">Trastes</button>
+            <button class="hotspot" data-part="cuerdas" style="left: 50%; top: 50%;">Cuerdas</button>
+            <button class="hotspot" data-part="caja" style="left: 28%; top: 62%;">Caja</button>
+            <button class="hotspot" data-part="boca" style="left: 57%; top: 49%;">Boca</button>
+            <button class="hotspot" data-part="puente" style="left: 59%; top: 59%;">Puente</button>
+          </div>
+
+          <article class="part-info" id="partInfo">
+            <p class="eyebrow">Selecciona una parte</p>
+            <h3>La guitarra no muerde</h3>
+            <p>Haz clic en un punto del diagrama para ver qué hace cada pieza.</p>
+          </article>
+        </div>
+
+        <div class="info-grid">
+          <article>
+            <h3>Las cuerdas</h3>
+            <p>De grave a agudo en afinación estándar: Mi, La, Re, Sol, Si, Mi. Estas seis notas son la base del instrumento.</p>
+          </article>
+          <article>
+            <h3>Los trastes</h3>
+            <p>Dividen el mástil en semitonos. Al presionar una cuerda contra un traste cambias la altura del sonido.</p>
+          </article>
+          <article>
+            <h3>La caja o cuerpo</h3>
+            <p>En guitarras acústicas y clásicas amplifica naturalmente el sonido. En eléctricas, el cuerpo sostiene pastillas y electrónica.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="historia" class="screen">
+        <div class="section-heading">
+          <p class="eyebrow">Historia express</p>
+          <h2>De instrumentos antiguos a la guitarra moderna</h2>
+          <p>Un recorrido corto para entender de dónde viene este aparato maravilloso que además ocupa medio cuarto.</p>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <span>Antigüedad</span>
+            <h3>Familias de instrumentos de cuerda</h3>
+            <p>Mucho antes de la guitarra moderna ya existían instrumentos de cuerda pulsada como la lira, el laúd y otras variantes regionales.</p>
+          </article>
+          <article>
+            <span>Edad Media y Renacimiento</span>
+            <h3>Laúdes, vihuelas y guitarras tempranas</h3>
+            <p>En Europa se desarrollaron instrumentos con caja, mástil y cuerdas que ayudaron a formar el camino hacia la guitarra española.</p>
+          </article>
+          <article>
+            <span>Siglos XVIII-XIX</span>
+            <h3>Se consolida la guitarra de seis cuerdas</h3>
+            <p>La guitarra gana una forma más cercana a la actual, con seis cuerdas simples y repertorio propio.</p>
+          </article>
+          <article>
+            <span>Siglo XX</span>
+            <h3>La guitarra eléctrica cambia el juego</h3>
+            <p>Con micrófonos o pastillas, amplificadores y nuevos estilos, la guitarra se vuelve protagonista del blues, jazz, rock, pop, metal y más.</p>
+          </article>
+          <article>
+            <span>Hoy</span>
+            <h3>Un instrumento global</h3>
+            <p>Está en música clásica, folclórica, urbana, rock, jazz, worship, bandas sonoras, videojuegos y hasta en tutoriales de internet grabados con dudosa iluminación.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="tipos" class="screen">
+        <div class="section-heading">
+          <p class="eyebrow">Familias principales</p>
+          <h2>Tipos de guitarra</h2>
+          <p>No todas sirven para lo mismo, aunque todas sirven para que alguien diga “yo también tocaba en el colegio”.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="type-card">
+            <div class="card-image-container">
+              <img src="assets/guitarra_clasica.png" alt="Guitarra clásica" class="type-card-img" />
+            </div>
+            <h3>Guitarra clásica</h3>
+            <p>Cuerdas de nylon, sonido cálido y suave. Ideal para iniciación, técnica clásica, música latinoamericana y acompañamiento tranquilo.</p>
+            <ul>
+              <li>Más amable con los dedos al inicio.</li>
+              <li>Mástil más ancho.</li>
+              <li>Se toca mucho con dedos.</li>
+            </ul>
+          </article>
+          <article class="type-card">
+            <div class="card-image-container">
+              <img src="assets/guitarra_acustica.png" alt="Guitarra acústica" class="type-card-img" />
+            </div>
+            <h3>Guitarra acústica</h3>
+            <p>Cuerdas metálicas, sonido brillante y potente. Muy usada en pop, rock acústico, folk y cantautores.</p>
+            <ul>
+              <li>Más volumen natural.</li>
+              <li>Puede doler más al principio.</li>
+              <li>Perfecta para rasgueos.</li>
+            </ul>
+          </article>
+          <article class="type-card">
+            <div class="card-image-container">
+              <img src="assets/guitarra_electrica.png" alt="Guitarra eléctrica" class="type-card-img" />
+            </div>
+            <h3>Guitarra eléctrica</h3>
+            <p>Usa pastillas y amplificador. Permite efectos, distorsión, solos, riffs y sonidos enormes sin tener que gritarle al universo.</p>
+            <ul>
+              <li>Cuerdas generalmente más suaves.</li>
+              <li>Necesita amplificador o interfaz.</li>
+              <li>Muy versátil para estilos modernos.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="primeros-pasos" class="screen">
+        <div class="section-heading">
+          <p class="eyebrow">Ruta para empezar</p>
+          <h2>Primeros pasos con la guitarra</h2>
+          <p>Una mini ruta para que el comienzo no sea caos con cuerdas, dedos y frustración patrocinada.</p>
+        </div>
+
+        <div class="stepper">
+          <button class="step active" data-step="0">1. Postura</button>
+          <button class="step" data-step="1">2. Afinación</button>
+          <button class="step" data-step="2">3. Mano izquierda</button>
+          <button class="step" data-step="3">4. Mano derecha</button>
+          <button class="step" data-step="4">5. Práctica</button>
+        </div>
+
+        <article class="step-content" id="stepContent"></article>
+
+        <div class="practice-box">
+          <h3>Rutina de 10 minutos para principiantes</h3>
+          <ol>
+            <li>1 minuto: respirar, sentarse bien y revisar afinación.</li>
+            <li>2 minutos: tocar cuerdas al aire de la 6 a la 1 y de regreso.</li>
+            <li>3 minutos: presionar trastes 1-2-3-4 en una cuerda, lento y limpio.</li>
+            <li>2 minutos: practicar cambio entre dos acordes.</li>
+            <li>2 minutos: tocar una canción o patrón sencillo para cerrar con algo musical.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="acordes" class="screen">
+        <div class="section-heading">
+          <p class="eyebrow">Conceptos clave</p>
+          <h2>¿Qué son los acordes?</h2>
+          <p>La base de la armonía y el acompañamiento en la guitarra.</p>
+        </div>
+
+        <div class="chord-explanation-layout">
+          <div class="chord-explanation-image">
+            <img src="assets/guitarra_armonia.png" alt="Guitarrista tocando un acorde" />
+          </div>
+          <div class="chord-explanation-text">
+            <article class="explanation-block">
+              <h3>La combinación del sonido</h3>
+              <p>Un acorde se produce cuando tocas <strong>tres o más notas al mismo tiempo</strong>. Mientras que una melodía es una nota tras otra (como cuando cantas una línea), el acorde las une para crear un "colchón" armónico.</p>
+            </article>
+
+            <article class="explanation-block">
+              <h3>¿Para qué sirven en la guitarra?</h3>
+              <p>Son el alma del acompañamiento. Cuando ves a alguien cantar y tocar la guitarra rítmicamente, está usando acordes para darle base, tono y estructura armónica a la voz.</p>
+            </article>
+
+            <article class="explanation-block">
+              <h3>Mayores y Menores: El color de la música</h3>
+              <p>Los acordes cambian el estado emocional de una canción:</p>
+              <ul>
+                <li><strong>Acordes Mayores:</strong> Transmiten sensaciones de alegría, brillo, estabilidad y energía.</li>
+                <li><strong>Acordes Menores:</strong> Suenan más nostálgicos, melancólicos, reflexivos o misteriosos.</li>
+              </ul>
+            </article>
+
+            <article class="explanation-block highlight-block">
+              <h3>¿Cómo se aprenden a tocar?</h3>
+              <p>Para aprender a colocar los dedos en cada traste y practicar posiciones específicas, en Musicala tenemos aplicaciones dedicadas y entrenadores interactivos diseñados para ese paso de tu aprendizaje. ¡Esta guía te ayudará a comprender la teoría detrás de ellos!</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="cuidado" class="screen">
+        <div class="section-heading">
+          <p class="eyebrow">Cuidado básico</p>
+          <h2>Cómo cuidar tu guitarra</h2>
+          <p>Porque comprar guitarra y tratarla como trapeador emocional no es una estrategia técnica.</p>
+        </div>
+
+        <div class="care-grid">
+          <article>
+            <h3>🧼 Limpieza</h3>
+            <p>Pasa un paño seco después de tocar. El sudor oxida cuerdas y ensucia el diapasón.</p>
+          </article>
+          <article>
+            <h3>🌦️ Humedad</h3>
+            <p>Evita sol directo, baños, carros calientes o lugares muy húmedos. La madera se mueve con el clima.</p>
+          </article>
+          <article>
+            <h3>🎒 Transporte</h3>
+            <p>Usa forro o estuche. Una caída pequeña puede torcer clavijas, mástil o puente.</p>
+          </article>
+          <article>
+            <h3>🎵 Cuerdas</h3>
+            <p>Cámbialas cuando suenen opacas, se sientan ásperas o se desafinen demasiado.</p>
+          </article>
+          <article>
+            <h3>🔧 Ajuste</h3>
+            <p>Si las cuerdas están demasiado altas o trastean mucho, puede necesitar calibración.</p>
+          </article>
+          <article>
+            <h3>🧠 Hábito</h3>
+            <p>Déjala visible y segura. Si la guardas en el olvido, sorpresa: practicarás menos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="quiz" class="screen">
+        <div class="section-heading">
+          <p class="eyebrow">Reto rápido</p>
+          <h2>Quiz de guitarra para principiantes</h2>
+          <p>Responde y revisa tu puntaje. La guitarra juzga en silencio, yo por lo menos te doy feedback.</p>
+        </div>
+
+        <div class="quiz-card" id="quizCard"></div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>Guía didáctica interactiva · Creado con ❤️ por Musicala para estudiantes de música.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
